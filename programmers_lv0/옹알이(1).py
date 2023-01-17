@@ -6,6 +6,5 @@ for b in babbling:
         b = b.replace(i, ',')
     if (b == ',') or(b == ',,') or (b ==',,,') or(b == ',,,,'):
         cnt += 1
-a = babbling[0].replace(word[3], '')
-
+print(cnt)
 
