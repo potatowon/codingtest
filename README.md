@@ -5,3 +5,4 @@
 ### 3-1. [입력과 listcomprehension](입력과listcomprehension.md)
 ### 3-2. [소수 구하기](소수(에라토스테네스_체).md)
 ### 3-3. [조건문](조건문.md)
+## 4. 탐색&시뮬레이션(string, 1차원, 2차원 리스트 탐색)
