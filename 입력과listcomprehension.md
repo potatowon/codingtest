@@ -26,6 +26,12 @@ lst = list(map(int, sys.stdin.readline().split()))
 ```
 > str 값으로 저장할 때는 int를 제외하면 마찬가지 이다.
 
+4. 그대로 str로 사용하는경우
+- **주의** 해당 함수로 불러오게 되면 공백문자도 불러오기 때문에 공백문자 제거 과정이 필요하다
+- `strip()`사용
+```python
+s = sys.stdin.readline().strip()
+```
 
 ## 📌 list comprehension
 리스트를 for, if, else 문을 활용하여 한줄로 써보자</br>
