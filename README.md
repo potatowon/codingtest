@@ -2,7 +2,7 @@
 ## 1. 프로그래머스
 ### 1-1. [PROGRAMMERSLv.0- 완료!](https://github.com/potatowon/codingtest/tree/master/programmers_lv0)
 - 2022.12.19 - 2023.01.18
-### 1-2. PROGRAMMERS Lv.1 
+### 1-2. [PROGRAMMERS Lv.1](programmerslv1)
 - 2023.01.25 ~
 ## 2. [Collection module ](Collection.md)
 ## 3. 코드구현 능력 기르기
