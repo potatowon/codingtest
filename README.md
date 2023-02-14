@@ -1,9 +1,13 @@
 # 코딩테스트
-## 1. 프로그래머스
+## 1. 프로그래머스 & 백준
 ### 1-1. [PROGRAMMERSLv.0- 완료!](https://github.com/potatowon/codingtest/tree/master/programmers_lv0)
 - 2022.12.19 - 2023.01.18
 ### 1-2. [PROGRAMMERS Lv.1 - 완료!](programmerslv1)
 - 2023.01.25 ~ 2023.02.06
+### 1-3 백준 
+  #### 1-3-1 브론즈4 (풀다가 패스)
+  #### 1-3-2 브론즈3 (본격시작)
+  
 ## 2. [Collection module ](Collection.md)
 ## 3. 코드구현 능력 기르기
 ### 3-1. [입력과 listcomprehension](입력과listcomprehension.md)
