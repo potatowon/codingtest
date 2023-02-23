@@ -11,12 +11,18 @@ l 이 주어진다. (윈도우의 크기)
 
 정렬을 사용할 수 없다
 '''
-
+from collections import deque
 import sys
-input = sys.stdin.readline
 
-n, l = map(int, input().split())
-A = list(map(int, input().split()))
-A = [A[0]]*(l-1) + A
-## 시작
+n, l = map(int, sys.stdin.readline().split())       # 원소의 크기, 윈도우 크기
+arr = list(map(int, sys.stdin.readline().split()))  
+d = [0 for _ in range(n)]
+window = deque()
 
+
+
+
+'''
+매번 위도우 위치를 변경할 때마다 Min 함수를 사용하는 경우 
+시간 복잡도가 O(n**2) 이 된다.
+'''
