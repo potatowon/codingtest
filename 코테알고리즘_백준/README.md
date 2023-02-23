@@ -167,3 +167,25 @@ print(cnt)
     - append
     - popleft()
 
+## 📌 우선순위 큐(Heap, Priority Queue)
+
+- 우선순위의 개념을 큐에 도입한 자료구조
+- 삽입/삭제 : $O(log N)$
+- python 에서는 `min-heap` 적용 : 알아서 최소 값으로 정렬
+
+```
+import heap as hp
+
+pq = []
+
+hp.heappush(pq, 123)
+hp.heappush(pq, 789)
+hp.heappush(pq, 456)
+while pq:
+    print(hp.heappop(pq))
+
+>>> 123
+>>> 456
+>>> 789
+```
+
