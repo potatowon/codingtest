@@ -19,6 +19,19 @@ arr = list(map(int, sys.stdin.readline().split()))
 d = [0 for _ in range(n)]
 window = deque()
 
+for idx in range(n):
+    while window and window[-1][1] > arr[idx]:
+        window.pop()
+    
+    ## window 의 최솟값의 index가 window 의 크기를 벗어난 경우
+    while window and idx - window[0][0] >= l: 
+        window.popleft()
+    window.append((idx, arr[idx]))
+    # 해당 window의 최솟값을 집어 넣는다
+    d[idx] = window[0][1]
+
+    print(*d)
+
 
 
 
