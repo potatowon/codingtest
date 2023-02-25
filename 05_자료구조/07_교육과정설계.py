@@ -23,3 +23,5 @@ for j in range(n):
         print(f'#{j+1} YES')
     else:
         print(f"#{j+1} NO")
+
+        
