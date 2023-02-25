@@ -20,7 +20,9 @@ ex n = 4 [2, 3, 3]
 import heapq
 
 def solution(no, works):
-    
+    ## 예외에 대한 제거
+    if sum(works) <= no:
+        return 0
     max_heap = []
     for i in works:
         heapq.heappush(max_heap, (-i))   # 파이썬의 heap 구조는 min heap 이므로 (-val, val) 방법을 이용한다. 
