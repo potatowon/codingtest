@@ -23,17 +23,15 @@ def solution(no, works):
     
     max_heap = []
     for i in works:
-        heapq.heappush(max_heap, (-i, i))   # 파이썬의 heap 구조는 min heap 이므로 (-val, val) 방법을 이용한다.
+        heapq.heappush(max_heap, (-i))   # 파이썬의 heap 구조는 min heap 이므로 (-val, val) 방법을 이용한다. 
+                                            # 다만 해당 문제의 경우 **2 으로 답을 도출하는 바 -i a만 써도 무방
     for _ in range(no):
-        w_max_n, w_max_p = heapq.heappop(max_heap)
-        w_max_n += 1
-        w_max_p -= 1
-        heapq.heappush(max_heap, (w_max_n, w_max_p))
+        heapq.heapreplace(max_heap, max_heap[0] + 1) # replace는 제거 후 추가. 
     result = 0
-    for i in max_heap:
-        result += i[1]**2
+    # for i in max_heap:
+    #     result += i[1]**2
     # result = 0
-    return result
+    return sum([i ** 2 for i in max_heap])
 
 print(solution(4, [4, 3, 3]))
 print(solution(2, [2,3]))
