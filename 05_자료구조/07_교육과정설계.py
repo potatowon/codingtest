@@ -15,13 +15,15 @@ n = int(input())        # 수업설계의 개수
 # n = 3
 for j in range(n):
     plan = sys.stdin.readline().strip()
+
     ans = ''
     for i in plan:
-        if i=='C' or i=='B' or i=='A':
-            ans += i
+        if i in list(subject):
+            if i not in ans:
+                ans += i
     if ans == subject:
         print(f'#{j+1} YES')
     else:
         print(f"#{j+1} NO")
 
-        
+
