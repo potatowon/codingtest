@@ -33,4 +33,16 @@ else:
     print("NO")
 
     
+# collections module 이용하기
+'''
+import sys
+from collections import Counter
 
+word1 = sys.stdin.readline().strip()
+word2 = sys.stdin.readline().strip()
+
+if Counter(word1) == Counter(word2):
+    print("YES")
+else:
+    print("NO")
+'''
