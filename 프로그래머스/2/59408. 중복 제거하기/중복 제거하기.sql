@@ -1,0 +1,5 @@
+-- 코드를 입력하세요
+-- 들어온 동물의 이름은 몇개인지 
+SELECT COUNT(DISTINCT NAME) 
+FROM ANIMAL_INS
+WHERE NAME IS NOT NULL
